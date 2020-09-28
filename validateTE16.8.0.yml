@@ -1,9 +1,10 @@
 # The objective is to perform VSTESTV2 with default values
 
 jobs:
-- job: RunTest1
+- job: Windows
   displayName: 'Run Tests'
-  pool: Default
+  pool:
+    vmImage: 'windows-2019'
   steps:              
   - task: VisualStudioTestPlatformInstaller@1
     displayName: 'Visual Studio Test Platform Installer'
