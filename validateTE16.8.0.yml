@@ -20,6 +20,9 @@ jobs:
         !**\obj\**
       searchFolder: '$(System.DefaultWorkingDirectory)\'
       vsTestVersion: 'toolsInstaller'
-      codeCoverageEnabled : true
+      codeCoverageEnabled: true
+      distributionBatchType: 'basedOnTestCases'
+      batchingBasedOnAgentsOption: 'customBatchSize'
+      customBatchSizeValue: '3'
       
 
