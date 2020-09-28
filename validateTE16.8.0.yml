@@ -23,6 +23,6 @@ jobs:
       codeCoverageEnabled: true
       distributionBatchType: 'basedOnTestCases'
       batchingBasedOnAgentsOption: 'customBatchSize'
-      customBatchSizeValue: '3'
+      customBatchSizeValue: '1'
       
 
