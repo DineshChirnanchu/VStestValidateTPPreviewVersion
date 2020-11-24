@@ -21,6 +21,8 @@ jobs:
       searchFolder: '$(System.DefaultWorkingDirectory)\'
       vsTestVersion: 'toolsInstaller'
       runOnlyImpactedTests: true
-  
+      distributionBatchType: 'basedOnTestCases'
+      batchingBasedOnAgentsOption: 'customBatchSize'
+      customBatchSizeValue: '1'
       
 
