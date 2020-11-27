@@ -9,8 +9,7 @@ jobs:
   - task: VisualStudioTestPlatformInstaller@1
     displayName: 'Visual Studio Test Platform Installer'
     inputs:
-      versionSelector: 'SpecificVersion'  
-      testPlatformVersion: '16.9.0-preview-20201123-03'
+      versionSelector: 'latestStable'
   - task: VSTest@2
     inputs:
       testSelector: 'testAssemblies'
@@ -21,8 +20,6 @@ jobs:
       searchFolder: '$(System.DefaultWorkingDirectory)\'
       vsTestVersion: 'toolsInstaller'
       runOnlyImpactedTests: true
-      distributionBatchType: 'basedOnTestCases'
-      batchingBasedOnAgentsOption: 'customBatchSize'
-      customBatchSizeValue: '1'
+      codeCoverageEnabled: true
       
 
