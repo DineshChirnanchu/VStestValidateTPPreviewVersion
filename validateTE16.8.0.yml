@@ -10,7 +10,7 @@ jobs:
     displayName: 'Visual Studio Test Platform Installer'
     inputs:
       versionSelector: 'SpecificVersion'  
-      testPlatformVersion: '16.7.1'
+      testPlatformVersion: '16.7.0'
   - task: VSTest@2
     inputs:
       testSelector: 'testAssemblies'
