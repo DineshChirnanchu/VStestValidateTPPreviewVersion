@@ -19,7 +19,6 @@ jobs:
         !**\obj\**
       searchFolder: '$(System.DefaultWorkingDirectory)\'
       vsTestVersion: 'toolsInstaller'
-      runOnlyImpactedTests: true
       codeCoverageEnabled: true
       
 
