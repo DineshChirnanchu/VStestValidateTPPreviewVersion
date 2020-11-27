@@ -4,7 +4,7 @@ jobs:
 - job: Windows
   displayName: 'Run Tests'
   pool:
-    vmImage: 'windows-2019'
+    vmImage: 'Din_pool'
   steps:              
   - task: VisualStudioTestPlatformInstaller@1
     displayName: 'Visual Studio Test Platform Installer'
