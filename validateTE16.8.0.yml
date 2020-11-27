@@ -9,7 +9,8 @@ jobs:
   - task: VisualStudioTestPlatformInstaller@1
     displayName: 'Visual Studio Test Platform Installer'
     inputs:
-      versionSelector: 'latestStable'
+      versionSelector: 'SpecificVersion'  
+      testPlatformVersion: '16.7.1'
   - task: VSTest@2
     inputs:
       testSelector: 'testAssemblies'
@@ -20,5 +21,6 @@ jobs:
       searchFolder: '$(System.DefaultWorkingDirectory)\'
       vsTestVersion: 'toolsInstaller'
       codeCoverageEnabled: true
+  
       
 
