@@ -3,8 +3,8 @@
 jobs:
 - job: Windows
   displayName: 'Run Tests'
-  pool:
-    vmImage: 'Din_pool'
+  pool: 'Din_pool'
+
   steps:              
   - task: VisualStudioTestPlatformInstaller@1
     displayName: 'Visual Studio Test Platform Installer'
