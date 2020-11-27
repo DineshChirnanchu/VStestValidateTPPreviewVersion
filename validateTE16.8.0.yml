@@ -3,15 +3,14 @@
 jobs:
 - job: Windows
   displayName: 'Run Tests'
-  pool:
-    vmImage: 'windows-2019'
-  
-
+  pool: 'Din_pool'
+ 
   steps:              
   - task: VisualStudioTestPlatformInstaller@1
     displayName: 'Visual Studio Test Platform Installer'
     inputs:
-      versionSelector: 'latestStable'  
+      versionSelector: 'SpecificVersion'  
+      testPlatformVersion: '16.7.0' 
 
   - task: VSTest@2
     inputs:
